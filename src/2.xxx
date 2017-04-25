@@ -1,0 +1,29 @@
+"use strict";
+var a = [1, 2, 3];
+var it = a[Symbol.iterator]();
+var s = new Set();
+s.add('1');
+s.add('2');
+s.add('2');
+console.log(s.size);
+console.log('---------------');
+var C = (function () {
+    function C(id) {
+        this.id = id;
+    }
+    C.prototype.toString = function () {
+        return JSON.stringify(this);
+    };
+    return C;
+}());
+var m = new Map();
+var e1 = new C('e1');
+m.set(e1, 1);
+m.set(e1, 2);
+var e2 = new C('e2');
+m.set(e2, 3);
+for (var _i = 0, _a = m.entries(); _i < _a.length; _i++) {
+    var x = _a[_i];
+    console.log(x);
+}
+//# sourceMappingURL=2.js.map

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ts-node": "^3.0.2",
+    "typescript": "^2.2.2"
+  },
+  "scripts": {
+    "tsn": "ts-node"
+  }
+}
